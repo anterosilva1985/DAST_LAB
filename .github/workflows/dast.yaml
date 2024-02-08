@@ -23,7 +23,7 @@ jobs:
         env:
           CX_APIKEY: ${{ secrets.AST_API_KEY }}
         with:
-          command: web
+          command: web 
           config: dast-config/zap_config.yaml
           environment_id: e655b0a8-be7a-4332-9de5-c23b2a954dbf
           fail_on: "HIGH"
