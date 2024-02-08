@@ -18,7 +18,7 @@ jobs:
       - name: Change dir owner
         run: sudo chown -R 1000:1000 ${{ github.workspace }}
       - name: Checkmarx DAST Github Action
-        uses: Checkmarx/dast-github-action@v1.0.5
+        uses: Checkmarx/dast-github-action@v1.0.6
         env:
           CX_APIKEY: eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI1MjFjODg2ZC1lMmI0LTQ3ZTYtYTAyYi0zODdiZTNiZmZlNGQifQ.eyJpYXQiOjE3MDczOTU5NjYsImp0aSI6ImQwNjhkZjI0LTFlZmQtNDBmYi04MjQ0LTJmNTc4MzUwOTMxNCIsImlzcyI6Imh0dHBzOi8vZGV1LmlhbS5jaGVja21hcngubmV0L2F1dGgvcmVhbG1zL2Rhc3RybmQiLCJhdWQiOiJodHRwczovL2RldS5pYW0uY2hlY2ttYXJ4Lm5ldC9hdXRoL3JlYWxtcy9kYXN0cm5kIiwic3ViIjoiZTE1NDkyNGUtZDg5My00MzJhLTg1MWUtOTI0ODYyNzhkYWI4IiwidHlwIjoiT2ZmbGluZSIsImF6cCI6ImFzdC1hcHAiLCJzZXNzaW9uX3N0YXRlIjoiMDAyZjY1OWMtZWM5Yi00MjE4LWJlMTAtNzcyMmE0OWNmM2M4Iiwic2NvcGUiOiIgb2ZmbGluZV9hY2Nlc3MiLCJzaWQiOiIwMDJmNjU5Yy1lYzliLTQyMTgtYmUxMC03NzIyYTQ5Y2YzYzgifQ.v0uZd0GzDMtgIjDVC8R-SzpsH5UHsEHqQdut0WThUT4
         with:
