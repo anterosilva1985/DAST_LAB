@@ -29,7 +29,7 @@ jobs:
           log_level: info
           base_url: https://deu.ast.checkmarx.net/
           verbose: true
-          timeout: 100000
+          timeout: 300
           output: ${{ github.workspace }}/output_fold
       - name: Change dir owner back to gh user
         if: always()
