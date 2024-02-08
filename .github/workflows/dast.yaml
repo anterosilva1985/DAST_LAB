@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  dast:
+  dast: 
     runs-on: ubuntu-latest
     name: DAST on Prem Testing Action
     steps:
