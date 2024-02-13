@@ -24,7 +24,7 @@ jobs:
         with:
           command: web
           config: dast-config/test_config.yaml
-          environment_id: 2510061b-7ac4-46f8-9583-3ba4e59b78f3
+          environment_id: e76a7d73-7391-4895-8221-7600b627f999
           fail_on: "HIGH"
           log_level: info
           base_url: https://eu.ast.checkmarx.net/
