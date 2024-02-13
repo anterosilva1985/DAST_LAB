@@ -21,14 +21,14 @@ jobs:
       - name: Checkmarx DAST Github Action
         uses: Checkmarx/dast-github-action@v1.0.6
         env:
-          CX_APIKEY: ${{ secrets.AST_API_KEY }}
+          CX_APIKEY: ${{ secrets.CX_APIKEY }}
         with:
           command: web
           config: dast-config/zap_config.yaml
-          environment_id: e655b0a8-be7a-4332-9de5-c23b2a954dbf
+          environment_id: e76a7d73-7391-4895-8221-7600b627f999
           fail_on: "HIGH"
           log_level: info
-          base_url: https://deu.ast.checkmarx.net/
+          base_url: https://eu.ast.checkmarx.net/
           verbose: true
           timeout: 100000
           output: ${{ github.workspace }}/output_fold
